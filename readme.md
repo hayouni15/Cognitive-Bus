@@ -3,31 +3,35 @@
 # Setup 
 - make sure darknet framework is properly installed from https://sc01-trt.thales-systems.ca/gitlab/BRiTE/darknet.git. (follow instructions in readme file)
 # Dependencies 
-## Anaconda
+1-Anaconda
 
 - go to setup-script folder , right click and open in terminal 
 - run the command : sh anaconda-install.sh
 - wait for the installation to finish.
 - open a new terminal and run the command ```conda config --set auto_activate_base false```
 
-## xampp (mysql server)
+2- xampp (mysql server)
 If you want to run the project locally you need sql server, you can use xampp. intall xampp run the xamp-install.sh by running the command : sh xampp-install.sh
 
 For kubernetes usages, refer to the [wiki](https://wiki-trt.thales-systems.ca/bin/view/Trt%20Quebec/Engineering/Infrastructure/VLANs/Collaborative_VLAN/Kubernetes/Usage/).
 # Content
-## Anchor mapping
+1- Anchor mapping
 The goal is to map the bus route, detect all anchors and  create a database of these anchors.
-## Bus Localization
+
+2- Bus Localization
 Using the proposed probabilistic approach ( in the Above publications) the bus locations is infered from the anchors detection pattern
 ![work flow](https://github.com/hayouni15/Cognitive-Bus/blob/master/md_images/Presentationd.jpg)
-## Speed estimation
+
+3- Speed estimation
 A deep neural network is trained to estimate the vehicle speed using only the camera. The proposed method is explained in the following figure where an optical flow matrix is derived from two consecutive frames and then converted to an HSV frame and finally an RGB image , the RGB image is fed to the trained neural network to give accurate estimates about the vehicle speed.
 ![Speed estimation](https://github.com/hayouni15/Cognitive-Bus/blob/master/md_images/Presentation2.jpg)
 This approach is very reliable and results in an estimation error less than 2 mph
 
-## Behavior Cloning
+
+4- Behavior Cloning
 A neural network is trained to estimate the appropriate steering angle
-## Collision Early warning
+
+5- Collision Early warning
 A new collision early warning approach is proposed to detect any potential collision risks and deliver warnings to the driver.
 # Versioning
 
