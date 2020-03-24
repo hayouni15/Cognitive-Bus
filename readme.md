@@ -1,4 +1,4 @@
-![Darknet Logo](http://www.mirsurg.eu/IMAGES/2_THALES_500x121_transp.gif)
+
 
 # Setup 
 - make sure darknet framework is properly installed from https://sc01-trt.thales-systems.ca/gitlab/BRiTE/darknet.git. (follow instructions in readme file)
@@ -19,10 +19,10 @@ For kubernetes usages, refer to the [wiki](https://wiki-trt.thales-systems.ca/bi
 The goal is to map the bus route, detect all anchors and  create a database of these anchors.
 ## Bus Localization
 Using the proposed probabilistic approach ( in the Above publications) the bus locations is infered from the anchors detection pattern
-![work flow](http://www.mirsurg.eu/IMAGES/2_THALES_500x121_transp.gif)
+![work flow](https://github.com/hayouni15/Cognitive-Bus/blob/master/md_images/Presentationd.jpg)
 ## Speed estimation
 A deep neural network is trained to estimate the vehicle speed using only the camera. The proposed method is explained in the following figure where an optical flow matrix is derived from two consecutive frames and then converted to an HSV frame and finally an RGB image , the RGB image is fed to the trained neural network to give accurate estimates about the vehicle speed.
-![Speed estimation](http://www.mirsurg.eu/IMAGES/2_THALES_500x121_transp.gif)
+![Speed estimation](https://github.com/hayouni15/Cognitive-Bus/blob/master/md_images/Presentation2.jpg)
 This approach is very reliable and results in an estimation error less than 2 mph
 
 ## Behavior Cloning
